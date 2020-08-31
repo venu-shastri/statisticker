@@ -2,6 +2,10 @@
 
 Here we compute statistics for a bunch of numbers.
 
+This project uses the Xunit framework to test functionality.
+[See here](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-dotnet-test)
+for details.
+
 ## The task
 
 The code is not complete and doesn't even compile.
