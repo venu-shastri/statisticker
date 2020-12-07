@@ -19,4 +19,4 @@ Take care not to leave behind any compiler warnings in your solution.
 
 What if some of the measurements are invalid? Invalid measurements are represented by NaN.
 
-Add a test case to supply invalid inputs and check the results.
+Add a test case to supply invalid mesurements and check the results.
