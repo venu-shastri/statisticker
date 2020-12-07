@@ -26,5 +26,21 @@ namespace Statistics.Test
             //Double.NaN (not-a-number), as described in
             //https://docs.microsoft.com/en-us/dotnet/api/system.double.nan?view=netcore-3.1
         }
+        
+        public void CheckLedStatusWhenMeasurementsAreInvalid(){
+            
+            LedDisplay _observer1=new LedDisplay();
+            Speaker _observer2=new Speaker();
+            List<IInvalidMeasurementAlert> observers=new List<IInvalidMeasurementAlert> (){ _observer1,_observer2 };
+            var statsComputer = new StatsComputer();
+            var computedStats = statsComputer.CalculateStatistics(
+                new List<___>{1.5, 8.9, 3.2, 4.5});
+            NotifyManager _notfyManager=new NotifyManager(observers);
+            _notifyManager.Monitor(computedStats);
+            Assert.True(_observer1.Status,LedDisplayhhhhhhhhhhhhhhhhhhhhhhhhhhStatus.ON);
+            
+        }
+            
+            
     }
 }
